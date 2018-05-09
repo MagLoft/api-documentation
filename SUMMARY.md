@@ -1,9 +1,11 @@
 # Table of contents
 
-* [MagLoft API Documentation](README.md)
+* [Portal API](README.md)
 
 ## Portal API
 
-* [Custom Subscriptions](portal/custom-subscriptions.md)
-* [App Pages](portal/app-pages.md)
+* [Issues](/api/portal/v1/issues.md)
+* [Clients](/api/portal/v1/clients.md)
+* [Custom Subscriptions](/api/portal/v1/custom_subscriptions.md)
+* [App Pages](/api/portal/v1/app_pages.md)
 

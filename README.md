@@ -1,13 +1,9 @@
----
-description: This page covers documentation for all MagLoft APIs
----
-
-# MagLoft API Documentation
+# Portal API
 
 | **API Documentation** | **Availability** | **Status** |
 | --- | --- | --- |
-| [Portal » Custom Subscriptions](portal/custom-subscriptions.md) | Premium Plan | Available |
-| [Portal » App Pages](portal/app-pages.md) | Premium Plan | Available |
-
-
+| [Portal API » Issues](/api/portal/v1/issues.md) | Premium Plan | Available |
+| [Portal API » Clients](/api/portal/v1/clients.md) | Premium Plan | Available |
+| [Portal API » Custom Subscriptions](/api/portal/v1/custom_subscriptions.md) | Premium Plan | Available |
+| [Portal API » App Pages](/api/portal/v1/app_pages.md) | Premium Plan | Available |
 
