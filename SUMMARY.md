@@ -1,6 +1,6 @@
 # Table of contents
 
-* [README](README.md)
+* [MagLoft API Documentation](README.md)
 
 ## Portal API
 
