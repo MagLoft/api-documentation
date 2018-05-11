@@ -18,11 +18,11 @@ This endpoint **returns** a list of all `app pages` that belong to the magazine
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="page" type="string" %}
+{% api-method-parameter name="page" type="Integer" %}
 The page number to list
 {% endapi-method-parameter %}
 
@@ -107,11 +107,11 @@ This endpoint **returns** a specific `app page` by `id`
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 App Page ID
 {% endapi-method-parameter %}
 
@@ -170,7 +170,7 @@ This endpoint **creates** a new `app page` and **returns** the saved `app page`
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
@@ -260,11 +260,11 @@ This endpoint **updates** a specific `app page` by `id` and **returns** the upda
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 App Page ID
 {% endapi-method-parameter %}
 
@@ -354,11 +354,11 @@ This endpoint **deletes** a specific `app page` by `id` and **returns** an `empt
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 App Page ID
 {% endapi-method-parameter %}
 

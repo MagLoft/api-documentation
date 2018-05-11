@@ -80,7 +80,7 @@ This endpoint **returns** a page list of all `clients`
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="page" type="string" required=true %}
+{% api-method-parameter name="page" type="Integer" required=true %}
 The page number to list
 {% endapi-method-parameter %}
 
@@ -173,7 +173,7 @@ This endpoint **returns** a specific `client` by `id`
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 Client ID
 {% endapi-method-parameter %}
 
@@ -311,7 +311,7 @@ This endpoint **updates** a specific `client` by `id` and **returns** the update
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 Client ID
 {% endapi-method-parameter %}
 
@@ -373,7 +373,7 @@ This endpoint **deletes** a specific `client` by `id` and **returns** an `empty 
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 Client ID
 {% endapi-method-parameter %}
 

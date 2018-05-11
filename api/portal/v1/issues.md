@@ -18,7 +18,7 @@ This endpoint **returns** a list of all `issues` that belong to the magazine
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
@@ -89,11 +89,11 @@ This endpoint **returns** a page list of all `issues` that belong to the magazin
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="page" type="string" required=true %}
+{% api-method-parameter name="page" type="Integer" required=true %}
 The page number to list
 {% endapi-method-parameter %}
 
@@ -182,11 +182,11 @@ This endpoint **returns** a specific `issue` by `id`
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 Issue ID
 {% endapi-method-parameter %}
 
@@ -249,11 +249,11 @@ This endpoint **redirects** to a specific `issue` HPUB url
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 Issue ID
 {% endapi-method-parameter %}
 
@@ -296,11 +296,11 @@ This endpoint **redirects** to a specific `issue` source file url
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 Issue ID
 {% endapi-method-parameter %}
 
@@ -343,7 +343,7 @@ This endpoint **creates** a new `issue` and **returns** the saved `issue`
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
@@ -485,11 +485,11 @@ This endpoint **updates** a specific `issue` by `id` and **returns** the updated
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 Issue ID
 {% endapi-method-parameter %}
 
@@ -691,15 +691,15 @@ This endpoint **creates** a new `issue` by cloning an existing `issue` and **ret
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 Issue ID
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="magazine_id" type="string" %}
+{% api-method-parameter name="magazine_id" type="Integer" %}
 Cloned Issue target magazine ID
 {% endapi-method-parameter %}
 
@@ -773,11 +773,11 @@ This endpoint converts an `issue` from PDF, EPUB or Folio
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 Issue ID
 {% endapi-method-parameter %}
 
@@ -840,11 +840,11 @@ This endpoint pack an `issue` to HPUB and **returns** the `issue`
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 Issue ID
 {% endapi-method-parameter %}
 
@@ -907,11 +907,11 @@ This endpoint process an `issue` filename links in TypeLoft Pages and **returns*
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 Issue ID
 {% endapi-method-parameter %}
 
@@ -954,11 +954,11 @@ This endpoint **deletes** a specific `issue` by `id` and **returns** an `empty r
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 Issue ID
 {% endapi-method-parameter %}
 

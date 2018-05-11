@@ -18,7 +18,7 @@ This endpoint **returns** a list of all `custom subscriptions` that belong to th
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
@@ -80,11 +80,11 @@ This endpoint **returns** a page list of all `custom subscriptions` that belong 
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="page" type="string" %}
+{% api-method-parameter name="page" type="Integer" %}
 The page number to list
 {% endapi-method-parameter %}
 
@@ -172,15 +172,15 @@ This endpoint **returns** a specific `custom subscription` by `id`
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="email" type="string" %}
+{% api-method-parameter name="email" type="String" %}
 Email address of the reader account
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id" type="string" %}
+{% api-method-parameter name="id" type="Integer" %}
 Subscription ID
 {% endapi-method-parameter %}
 
@@ -242,7 +242,7 @@ This endpoint **creates** a new `custom subscription` and **returns** the saved 
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
@@ -343,11 +343,11 @@ This endpoint **updates** a specific `custom subscription` by `id` and **returns
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 Subscription ID
 {% endapi-method-parameter %}
 
@@ -428,11 +428,11 @@ This endpoint **deletes** a specific `custom subscription` by `id` and **returns
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id" type="string" required=true %}
+{% api-method-parameter name="id" type="Integer" required=true %}
 Subscription ID
 {% endapi-method-parameter %}
 
@@ -475,7 +475,7 @@ This endpoint **returns** a csv document that contains a spreadsheet of all `cus
 
 {% api-method-path-parameters %}
 
-{% api-method-parameter name="app_id" type="string" required=true %}
+{% api-method-parameter name="app_id" type="String" required=true %}
 App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
