@@ -31,19 +31,19 @@ The page number to list
 
 {% api-method-query-parameters %}
 
-{% api-method-parameter name="per_page" type="string" %}
+{% api-method-parameter name="per_page" type="Integer" %}
 Number of items to show per page
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order_by" type="string" %}
+{% api-method-parameter name="order_by" type="Symbol" %}
 Field to sort results by
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order_dir" type="string" %}
+{% api-method-parameter name="order_dir" type="Symbol" %}
 Direction (asc, desc) to sort results by
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="filter" type="string" %}
+{% api-method-parameter name="filter" type="String" %}
 Text filter to search results by
 {% endapi-method-parameter %}
 
@@ -180,31 +180,31 @@ App ID (Publication) to scope this request for.
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="name" type="string" required=true %}
+{% api-method-parameter name="name" type="String" required=true %}
 Internal name of a page
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="title" type="string" %}
+{% api-method-parameter name="title" type="String" %}
 Visible title of a page
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="icon" type="string" %}
+{% api-method-parameter name="icon" type="String" %}
 Optional icon to show in the modal window or side menu
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="trigger" type="string" %}
+{% api-method-parameter name="trigger" type="String" %}
 Trigger Event to specify when the page should show up
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="action" type="string" %}
+{% api-method-parameter name="action" type="String" %}
 Call to action to perform when accepting the offer
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="html" type="string" %}
+{% api-method-parameter name="html" type="String" %}
 The html contents of a page
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="visibility" type="string" %}
+{% api-method-parameter name="visibility" type="Array" %}
 An array specifying on which devices the page should be shown (web, ios, android)
 {% endapi-method-parameter %}
 
@@ -274,31 +274,31 @@ App Page ID
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="name" type="string" %}
+{% api-method-parameter name="name" type="String" %}
 Internal name of a page
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="title" type="string" %}
+{% api-method-parameter name="title" type="String" %}
 Visible title of a page
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="icon" type="string" %}
+{% api-method-parameter name="icon" type="String" %}
 Optional icon to show in the modal window or side menu
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="trigger" type="string" %}
+{% api-method-parameter name="trigger" type="String" %}
 Trigger Event to specify when the page should show up
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="action" type="string" %}
+{% api-method-parameter name="action" type="String" %}
 Call to action to perform when accepting the offer
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="html" type="string" %}
+{% api-method-parameter name="html" type="String" %}
 The html contents of a page
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="visibility" type="string" %}
+{% api-method-parameter name="visibility" type="Array" %}
 An array specifying on which devices the page should be shown (web, ios, android)
 {% endapi-method-parameter %}
 

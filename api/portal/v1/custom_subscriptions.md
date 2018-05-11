@@ -93,19 +93,19 @@ The page number to list
 
 {% api-method-query-parameters %}
 
-{% api-method-parameter name="per_page" type="string" %}
+{% api-method-parameter name="per_page" type="Integer" %}
 Number of items to show per page
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order_by" type="string" %}
+{% api-method-parameter name="order_by" type="Symbol" %}
 Field to sort results by
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order_dir" type="string" %}
+{% api-method-parameter name="order_dir" type="Symbol" %}
 Direction (asc, desc) to sort results by
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="filter" type="string" %}
+{% api-method-parameter name="filter" type="String" %}
 Text filter to search results by
 {% endapi-method-parameter %}
 
@@ -252,39 +252,39 @@ App ID (Publication) to scope this request for.
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="email" type="string" required=true %}
+{% api-method-parameter name="email" type="String" required=true %}
 Email address of the reader account
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="password" type="string" %}
+{% api-method-parameter name="password" type="String" %}
 Plain-text password of Reader account shown only when creating a new subscription without specifying a password
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="start_date" type="string" %}
+{% api-method-parameter name="start_date" type="Grape::ApiDate" %}
 Date from which the subscription should be valid (inclusive)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="end_date" type="string" %}
+{% api-method-parameter name="end_date" type="Grape::ApiDate" %}
 Date until which the subscription should be valid (inclusive)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="active" type="string" %}
+{% api-method-parameter name="active" type="Virtus::Attribute::Boolean" %}
 Boolean indicating whether the subscription is currently active
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="custom_data" type="string" %}
+{% api-method-parameter name="custom_data" type="Hash" %}
 Hash containing custom data (string key, string value) of a reader
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="firstname" type="string" %}
+{% api-method-parameter name="firstname" type="String" %}
 First name of the Custom Subscription's reader
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="lastname" type="string" %}
+{% api-method-parameter name="lastname" type="String" %}
 Last name of the Custom Subscription's reader
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="confirmation" type="string" %}
+{% api-method-parameter name="confirmation" type="Virtus::Attribute::Boolean" %}
 Boolean to indicate whether to send a confirmation email
 {% endapi-method-parameter %}
 
@@ -357,19 +357,19 @@ Subscription ID
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="start_date" type="string" %}
+{% api-method-parameter name="start_date" type="Grape::ApiDate" %}
 Date from which the subscription should be valid (inclusive)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="end_date" type="string" %}
+{% api-method-parameter name="end_date" type="Grape::ApiDate" %}
 Date until which the subscription should be valid (inclusive)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="active" type="string" %}
+{% api-method-parameter name="active" type="Virtus::Attribute::Boolean" %}
 Boolean indicating whether the subscription is currently active
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="custom_data" type="string" %}
+{% api-method-parameter name="custom_data" type="Hash" %}
 Hash containing custom data (string key, string value) of a reader
 {% endapi-method-parameter %}
 

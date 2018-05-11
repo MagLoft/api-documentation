@@ -88,19 +88,19 @@ The page number to list
 
 {% api-method-query-parameters %}
 
-{% api-method-parameter name="per_page" type="string" %}
+{% api-method-parameter name="per_page" type="Integer" %}
 Number of items to show per page
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order_by" type="string" %}
+{% api-method-parameter name="order_by" type="Symbol" %}
 Field to sort results by
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order_dir" type="string" %}
+{% api-method-parameter name="order_dir" type="Symbol" %}
 Direction (asc, desc) to sort results by
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="filter" type="string" %}
+{% api-method-parameter name="filter" type="String" %}
 Text filter to search results by
 {% endapi-method-parameter %}
 
@@ -237,27 +237,27 @@ App ID (Publication) to scope this request for.
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="email" type="string" required=true %}
+{% api-method-parameter name="email" type="String" required=true %}
 Reader Email Address
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="password" type="string" %}
+{% api-method-parameter name="password" type="String" %}
 Reader Password
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="name" type="string" %}
+{% api-method-parameter name="name" type="String" %}
 Reader Full Name (first name and last name)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="custom_data" type="string" %}
+{% api-method-parameter name="custom_data" type="Hash" %}
 Custom key-value data stored for this reader
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="confirmation" type="string" %}
+{% api-method-parameter name="confirmation" type="Virtus::Attribute::Boolean" %}
 Send Confirmation Email
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="confirmed" type="string" %}
+{% api-method-parameter name="confirmed" type="Virtus::Attribute::Boolean" %}
 Whether this readers' Email was confirmed
 {% endapi-method-parameter %}
 
@@ -325,19 +325,19 @@ Reader ID
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="name" type="string" %}
+{% api-method-parameter name="name" type="String" %}
 Reader Full Name (first name and last name)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="custom_data" type="string" %}
+{% api-method-parameter name="custom_data" type="Hash" %}
 Custom key-value data stored for this reader
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="password" type="string" %}
+{% api-method-parameter name="password" type="String" %}
 Reader Password
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="confirmed" type="string" %}
+{% api-method-parameter name="confirmed" type="Virtus::Attribute::Boolean" %}
 Whether this readers' Email was confirmed
 {% endapi-method-parameter %}
 
@@ -425,11 +425,11 @@ null
 {% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id/:id/unlock" %}
 
 {% api-method-summary %}
-Unlock Product IDs
+Create Issue Purchases
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+This endpoint **creates** one or many `issue purchases` by `product_id` and **returns** a list of `issue purchases`
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -452,12 +452,12 @@ Reader ID
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="product_ids" type="string" required=true %}
-Issue Product IDs
+{% api-method-parameter name="product_ids" type="Array" required=true %}
+Array containing Issue Product IDs to unlock
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order_id" type="string" %}
-Order ID for the issue purchase
+{% api-method-parameter name="order_id" type="String" %}
+Subscription Order ID
 {% endapi-method-parameter %}
 
 {% endapi-method-body-parameters %}
@@ -469,7 +469,8 @@ Order ID for the issue purchase
 {% api-method-response-example httpCode=200 %}
 
 ```json
-null
+{
+}
 ```
 
 {% endapi-method-response-example %}

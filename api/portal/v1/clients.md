@@ -89,23 +89,23 @@ The page number to list
 
 {% api-method-query-parameters %}
 
-{% api-method-parameter name="per_page" type="string" %}
+{% api-method-parameter name="per_page" type="Integer" %}
 Number of items to show per page
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order_by" type="string" %}
+{% api-method-parameter name="order_by" type="Symbol" %}
 Field to sort results by
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order_dir" type="string" %}
+{% api-method-parameter name="order_dir" type="Symbol" %}
 Direction (asc, desc) to sort results by
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="filter" type="string" %}
+{% api-method-parameter name="filter" type="String" %}
 Text filter to search results by
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="publication_id" type="string" %}
+{% api-method-parameter name="publication_id" type="Integer" %}
 Filter by publications ID
 {% endapi-method-parameter %}
 
@@ -239,19 +239,19 @@ This endpoint **creates** a new `client` and **returns** the saved `client`
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="email" type="string" required=true %}
+{% api-method-parameter name="email" type="String" required=true %}
 Client email address
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="firstname" type="string" required=true %}
+{% api-method-parameter name="firstname" type="String" required=true %}
 Client Firstname
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="lastname" type="string" %}
+{% api-method-parameter name="lastname" type="String" %}
 Client Lastname
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="password" type="string" required=true %}
+{% api-method-parameter name="password" type="String" required=true %}
 Client Password
 {% endapi-method-parameter %}
 
@@ -321,19 +321,19 @@ Client ID
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="firstname" type="string" %}
+{% api-method-parameter name="firstname" type="String" %}
 Client Firstname
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="lastname" type="string" %}
+{% api-method-parameter name="lastname" type="String" %}
 Client Lastname
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="password" type="string" %}
+{% api-method-parameter name="password" type="String" %}
 Client Password
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="password_confirmation" type="string" %}
+{% api-method-parameter name="password_confirmation" type="String" %}
 Client Password Confirmation
 {% endapi-method-parameter %}
 

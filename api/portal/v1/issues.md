@@ -27,7 +27,7 @@ App ID (Publication) to scope this request for.
 
 {% api-method-query-parameters %}
 
-{% api-method-parameter name="source" type="string" %}
+{% api-method-parameter name="source" type="String" %}
 Source type of issue
 {% endapi-method-parameter %}
 
@@ -102,19 +102,19 @@ The page number to list
 
 {% api-method-query-parameters %}
 
-{% api-method-parameter name="per_page" type="string" %}
+{% api-method-parameter name="per_page" type="Integer" %}
 Number of items to show per page
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order_by" type="string" %}
+{% api-method-parameter name="order_by" type="Symbol" %}
 Field to sort results by
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order_dir" type="string" %}
+{% api-method-parameter name="order_dir" type="Symbol" %}
 Direction (asc, desc) to sort results by
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="filter" type="string" %}
+{% api-method-parameter name="filter" type="String" %}
 Text filter to search results by
 {% endapi-method-parameter %}
 
@@ -353,79 +353,79 @@ App ID (Publication) to scope this request for.
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="user_id" type="string" %}
+{% api-method-parameter name="user_id" type="Integer" %}
 Issue User ID
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="title" type="string" %}
+{% api-method-parameter name="title" type="String" %}
 Issue Title
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="info" type="string" %}
+{% api-method-parameter name="info" type="String" %}
 Issue information
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="date" type="string" %}
+{% api-method-parameter name="date" type="String" %}
 Issue publish date
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="product_id" type="string" %}
+{% api-method-parameter name="product_id" type="String" %}
 Issue product id
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="product_id_apple" type="string" %}
+{% api-method-parameter name="product_id_apple" type="String" %}
 Issue product id (Apple)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="product_id_google" type="string" %}
+{% api-method-parameter name="product_id_google" type="String" %}
 Issue product id (Google)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="unlock_type" type="string" %}
+{% api-method-parameter name="unlock_type" type="String" %}
 Unlock Type
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="price_tier" type="string" %}
+{% api-method-parameter name="price_tier" type="Integer" %}
 Issue price tier
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="design_id" type="string" %}
+{% api-method-parameter name="design_id" type="Integer" %}
 Issue typeloft theme id
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="cover" type="string" %}
+{% api-method-parameter name="cover" type="String" %}
 Issue Cover
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="hpub" type="string" %}
+{% api-method-parameter name="hpub" type="String" %}
 Issue HPUB Path
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="source_file" type="string" %}
+{% api-method-parameter name="source_file" type="String" %}
 Issue Source File
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="source" type="string" %}
+{% api-method-parameter name="source" type="String" %}
 Source type of issue
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="categories" type="string" %}
+{% api-method-parameter name="categories" type="Array" %}
 Issue categories
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties" type="string" %}
+{% api-method-parameter name="properties" type="Hash" %}
 Issue properties
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="status" type="string" %}
+{% api-method-parameter name="status" type="Symbol" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="create_pages" type="string" %}
+{% api-method-parameter name="create_pages" type="Virtus::Attribute::Boolean" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="publish" type="string" %}
+{% api-method-parameter name="publish" type="Virtus::Attribute::Boolean" %}
 
 {% endapi-method-parameter %}
 
@@ -499,139 +499,139 @@ Issue ID
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="title" type="string" %}
+{% api-method-parameter name="title" type="String" %}
 Issue Title
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="info" type="string" %}
+{% api-method-parameter name="info" type="String" %}
 Issue information
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="date" type="string" %}
+{% api-method-parameter name="date" type="String" %}
 Issue publish date
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="product_id" type="string" %}
+{% api-method-parameter name="product_id" type="String" %}
 Issue product id
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="product_id_apple" type="string" %}
+{% api-method-parameter name="product_id_apple" type="String" %}
 Issue product id (Apple)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="product_id_google" type="string" %}
+{% api-method-parameter name="product_id_google" type="String" %}
 Issue product id (Google)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="unlock_type" type="string" %}
+{% api-method-parameter name="unlock_type" type="String" %}
 Unlock Type
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="price_tier" type="string" %}
+{% api-method-parameter name="price_tier" type="Integer" %}
 Issue price tier
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="cover" type="string" %}
+{% api-method-parameter name="cover" type="String" %}
 Issue Cover
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="hpub" type="string" %}
+{% api-method-parameter name="hpub" type="String" %}
 Issue HPUB Path
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="source_file" type="string" %}
+{% api-method-parameter name="source_file" type="String" %}
 Issue Source File
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="source" type="string" %}
+{% api-method-parameter name="source" type="String" %}
 Source type of issue
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="categories" type="string" %}
+{% api-method-parameter name="categories" type="Array" %}
 Issue categories
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="status" type="string" %}
+{% api-method-parameter name="status" type="Symbol" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="custom_data" type="string" %}
+{% api-method-parameter name="custom_data" type="Hash" %}
 Custom Data Hash
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="custom_data[language]" type="string" %}
+{% api-method-parameter name="custom_data[language]" type="String" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="custom_data[copy_of]" type="string" %}
+{% api-method-parameter name="custom_data[copy_of]" type="String" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties" type="string" %}
+{% api-method-parameter name="properties" type="Hash" %}
 Issue properties
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[-baker-page-turn-tap]" type="string" %}
+{% api-method-parameter name="properties[-baker-page-turn-tap]" type="Virtus::Attribute::Boolean" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[-baker-vertical-bounce]" type="string" %}
+{% api-method-parameter name="properties[-baker-vertical-bounce]" type="Virtus::Attribute::Boolean" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[-baker-max-zoom-level]" type="string" %}
+{% api-method-parameter name="properties[-baker-max-zoom-level]" type="Float" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[-baker-dual-spread]" type="string" %}
+{% api-method-parameter name="properties[-baker-dual-spread]" type="Virtus::Attribute::Boolean" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[default_orientation]" type="string" %}
+{% api-method-parameter name="properties[default_orientation]" type="String" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[orientation_phone]" type="string" %}
+{% api-method-parameter name="properties[orientation_phone]" type="String" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[orientation_tablet]" type="string" %}
+{% api-method-parameter name="properties[orientation_tablet]" type="String" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[converted_to_typeloft]" type="string" %}
+{% api-method-parameter name="properties[converted_to_typeloft]" type="Virtus::Attribute::Boolean" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[reverse_page_order]" type="string" %}
+{% api-method-parameter name="properties[reverse_page_order]" type="Virtus::Attribute::Boolean" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[link_style]" type="string" %}
+{% api-method-parameter name="properties[link_style]" type="String" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[allowed_devices]" type="string" %}
+{% api-method-parameter name="properties[allowed_devices]" type="[String]" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[allowed_platforms]" type="string" %}
+{% api-method-parameter name="properties[allowed_platforms]" type="[String]" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[navigator]" type="string" %}
+{% api-method-parameter name="properties[navigator]" type="Virtus::Attribute::Boolean" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[cover_colors]" type="string" %}
+{% api-method-parameter name="properties[cover_colors]" type="[String]" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[features]" type="string" %}
+{% api-method-parameter name="properties[features]" type="[String]" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="properties[web_url]" type="string" %}
+{% api-method-parameter name="properties[web_url]" type="String" %}
 
 {% endapi-method-parameter %}
 
@@ -709,11 +709,11 @@ Cloned Issue target magazine ID
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="user_id" type="string" required=true %}
+{% api-method-parameter name="user_id" type="Integer" required=true %}
 Issue User ID
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="cloneTitle" type="string" required=true %}
+{% api-method-parameter name="cloneTitle" type="String" required=true %}
 Cloned Issue title
 {% endapi-method-parameter %}
 
