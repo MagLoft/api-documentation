@@ -8,7 +8,7 @@ description: Authenticating your requests to securely access the MagLoft API
 
 When you logged in in the MagLoft portal, a unique code of Access Token is set for you. This Access Token is available on your Profile Information of your MagLoft Account. Keep it private and don't share it with anyone.
 
-![This 21 character string is your personal Access Token which grants you access to all APIs.](../.gitbook/assets/access-token%20%281%29.png)
+![This 21 character string is your personal Access Token which grants you access to all APIs.](.gitbook/assets/access-token%20%281%29.png)
 
 ### Usage:
 

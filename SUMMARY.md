@@ -1,10 +1,10 @@
 # Table of contents
 
 * [Portal API](README.md)
+* [Authentication](authentication.md)
 
 ## Portal API
 
-* [Authentication](portal-api/authentication.md)
 * [Issues](portal-api/issues.md)
 * [Clients](portal-api/clients.md)
 * [Custom Subscriptions](portal-api/custom-subscriptions.md)
