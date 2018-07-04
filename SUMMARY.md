@@ -4,9 +4,10 @@
 
 ## Portal API
 
-* [Issues](/api/portal/v1/issues.md)
-* [Clients](/api/portal/v1/clients.md)
-* [Custom Subscriptions](/api/portal/v1/custom_subscriptions.md)
-* [Readers](/api/portal/v1/readers.md)
-* [App Pages](/api/portal/v1/app_pages.md)
+* [Authentication](portal-api/authentication.md)
+* [Issues](portal-api/issues.md)
+* [Clients](portal-api/clients.md)
+* [Custom Subscriptions](portal-api/custom-subscriptions.md)
+* [Readers](portal-api/readers.md)
+* [App Pages](portal-api/app-pages.md)
 

@@ -2,8 +2,7 @@
 
 API for managing app readers
 
-{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id" %}
-
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/readers/:app\_id" %}
 {% api-method-summary %}
 List Readers
 {% endapi-method-summary %}
@@ -13,27 +12,27 @@ This endpoint **returns** a list of all `readers` that belong to the magazine
 {% endapi-method-description %}
 
 {% api-method-spec %}
-
 {% api-method-request %}
-
 {% api-method-path-parameters %}
-
-{% api-method-parameter name="app_id" type="String" required=true %}
-App ID (Publication) to scope this request for.
+{% api-method-parameter name="app\_id" type="String" required=true %}
+App ID \(Publication\) to scope this request for.
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 
-
-
-
+{% api-method-headers %}
+{% api-method-parameter name="X-Magloft-Accesstoken" type="string" required=true %}
+User Access Token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
-
 {% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-```json
+{% endapi-method-response-example-description %}
+
+```javascript
 {
   "id": 1234,
   "email": "john.doe@magloft.com",
@@ -50,17 +49,12 @@ App ID (Publication) to scope this request for.
   }
 }
 ```
-
 {% endapi-method-response-example %}
-
 {% endapi-method-response %}
-
 {% endapi-method-spec %}
-
 {% endapi-method %}
 
-{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id/page/:page" %}
-
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/readers/:app\_id/page/:page" %}
 {% api-method-summary %}
 Retrieve paginated list of readers
 {% endapi-method-summary %}
@@ -70,51 +64,43 @@ This endpoint **returns** a page list of all `readers` that belong to the magazi
 {% endapi-method-description %}
 
 {% api-method-spec %}
-
 {% api-method-request %}
-
 {% api-method-path-parameters %}
-
-{% api-method-parameter name="app_id" type="String" required=true %}
-App ID (Publication) to scope this request for.
+{% api-method-parameter name="app\_id" type="String" required=true %}
+App ID \(Publication\) to scope this request for.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page" type="Integer" required=true %}
 The page number to list
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 
-
 {% api-method-query-parameters %}
-
-{% api-method-parameter name="per_page" type="Integer" %}
+{% api-method-parameter name="per\_page" type="Integer" %}
 Number of items to show per page
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order_by" type="Symbol" %}
+{% api-method-parameter name="order\_by" type="Symbol" %}
 Field to sort results by
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order_dir" type="Symbol" %}
-Direction (asc, desc) to sort results by
+{% api-method-parameter name="order\_dir" type="Symbol" %}
+Direction \(asc, desc\) to sort results by
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="filter" type="String" %}
 Text filter to search results by
 {% endapi-method-parameter %}
-
 {% endapi-method-query-parameters %}
-
-
-
 {% endapi-method-request %}
 
 {% api-method-response %}
-
 {% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-```json
+{% endapi-method-response-example-description %}
+
+```javascript
 {
   "total": 1,
   "page": 1,
@@ -137,17 +123,12 @@ Text filter to search results by
   ]
 }
 ```
-
 {% endapi-method-response-example %}
-
 {% endapi-method-response %}
-
 {% endapi-method-spec %}
-
 {% endapi-method %}
 
-{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id/(:email)(:id)" %}
-
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/readers/:app\_id/\(:email\)\(:id\)" %}
 {% api-method-summary %}
 Get Reader
 {% endapi-method-summary %}
@@ -157,13 +138,10 @@ This endpoint **returns** a specific `reader` by `id`
 {% endapi-method-description %}
 
 {% api-method-spec %}
-
 {% api-method-request %}
-
 {% api-method-path-parameters %}
-
-{% api-method-parameter name="app_id" type="String" required=true %}
-App ID (Publication) to scope this request for.
+{% api-method-parameter name="app\_id" type="String" required=true %}
+App ID \(Publication\) to scope this request for.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="email" type="String" %}
@@ -173,19 +151,16 @@ Reader Email Address
 {% api-method-parameter name="id" type="Integer" %}
 Reader ID
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
-
-
-
-
 {% endapi-method-request %}
 
 {% api-method-response %}
-
 {% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-```json
+{% endapi-method-response-example-description %}
+
+```javascript
 {
   "id": 1234,
   "email": "john.doe@magloft.com",
@@ -202,17 +177,12 @@ Reader ID
   }
 }
 ```
-
 {% endapi-method-response-example %}
-
 {% endapi-method-response %}
-
 {% endapi-method-spec %}
-
 {% endapi-method %}
 
-{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id" %}
-
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/readers/:app\_id" %}
 {% api-method-summary %}
 Create a Reader
 {% endapi-method-summary %}
@@ -222,21 +192,14 @@ This endpoint **creates** a new `reader` and **returns** the saved `reader`
 {% endapi-method-description %}
 
 {% api-method-spec %}
-
 {% api-method-request %}
-
 {% api-method-path-parameters %}
-
-{% api-method-parameter name="app_id" type="String" required=true %}
-App ID (Publication) to scope this request for.
+{% api-method-parameter name="app\_id" type="String" required=true %}
+App ID \(Publication\) to scope this request for.
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 
-
-
 {% api-method-body-parameters %}
-
 {% api-method-parameter name="email" type="String" required=true %}
 Reader Email Address
 {% endapi-method-parameter %}
@@ -246,10 +209,10 @@ Reader Password
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="name" type="String" %}
-Reader Full Name (first name and last name)
+Reader Full Name \(first name and last name\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="custom_data" type="Hash" %}
+{% api-method-parameter name="custom\_data" type="Hash" %}
 Custom key-value data stored for this reader
 {% endapi-method-parameter %}
 
@@ -260,16 +223,16 @@ Send Confirmation Email
 {% api-method-parameter name="confirmed" type="Virtus::Attribute::Boolean" %}
 Whether this readers' Email was confirmed
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
-
 {% endapi-method-request %}
 
 {% api-method-response %}
-
 {% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-```json
+{% endapi-method-response-example-description %}
+
+```javascript
 {
   "id": 1234,
   "email": "john.doe@magloft.com",
@@ -286,17 +249,12 @@ Whether this readers' Email was confirmed
   }
 }
 ```
-
 {% endapi-method-response-example %}
-
 {% endapi-method-response %}
-
 {% endapi-method-spec %}
-
 {% endapi-method %}
 
-{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id/:id" %}
-
+{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/readers/:app\_id/:id" %}
 {% api-method-summary %}
 Update a Reader
 {% endapi-method-summary %}
@@ -306,30 +264,23 @@ This endpoint **updates** a specific `reader` by `id` and **returns** the update
 {% endapi-method-description %}
 
 {% api-method-spec %}
-
 {% api-method-request %}
-
 {% api-method-path-parameters %}
-
-{% api-method-parameter name="app_id" type="String" required=true %}
-App ID (Publication) to scope this request for.
+{% api-method-parameter name="app\_id" type="String" required=true %}
+App ID \(Publication\) to scope this request for.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id" type="Integer" required=true %}
 Reader ID
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 
-
-
 {% api-method-body-parameters %}
-
 {% api-method-parameter name="name" type="String" %}
-Reader Full Name (first name and last name)
+Reader Full Name \(first name and last name\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="custom_data" type="Hash" %}
+{% api-method-parameter name="custom\_data" type="Hash" %}
 Custom key-value data stored for this reader
 {% endapi-method-parameter %}
 
@@ -340,16 +291,16 @@ Reader Password
 {% api-method-parameter name="confirmed" type="Virtus::Attribute::Boolean" %}
 Whether this readers' Email was confirmed
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
-
 {% endapi-method-request %}
 
 {% api-method-response %}
-
 {% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-```json
+{% endapi-method-response-example-description %}
+
+```javascript
 {
   "id": 1234,
   "email": "john.doe@magloft.com",
@@ -366,17 +317,12 @@ Whether this readers' Email was confirmed
   }
 }
 ```
-
 {% endapi-method-response-example %}
-
 {% endapi-method-response %}
-
 {% endapi-method-spec %}
-
 {% endapi-method %}
 
-{% api-method method="delete" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id/:id" %}
-
+{% api-method method="delete" host="https://www.magloft.com" path="/api/portal/v1/readers/:app\_id/:id" %}
 {% api-method-summary %}
 Delete Reader
 {% endapi-method-summary %}
@@ -386,44 +332,33 @@ This endpoint **deletes** a specific `reader` by `id` and **returns** an `empty 
 {% endapi-method-description %}
 
 {% api-method-spec %}
-
 {% api-method-request %}
-
 {% api-method-path-parameters %}
-
-{% api-method-parameter name="app_id" type="String" required=true %}
-App ID (Publication) to scope this request for.
+{% api-method-parameter name="app\_id" type="String" required=true %}
+App ID \(Publication\) to scope this request for.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id" type="Integer" required=true %}
 Reader ID
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
-
-
-
-
 {% endapi-method-request %}
 
 {% api-method-response %}
-
 {% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-```json
+{% endapi-method-response-example-description %}
+
+```javascript
 null
 ```
-
 {% endapi-method-response-example %}
-
 {% endapi-method-response %}
-
 {% endapi-method-spec %}
-
 {% endapi-method %}
 
-{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id/:id/unlock" %}
-
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/readers/:app\_id/:id/unlock" %}
 {% api-method-summary %}
 Create Issue Purchases
 {% endapi-method-summary %}
@@ -433,56 +368,44 @@ This endpoint **creates** one or many `issue purchases` by `product_id` and **re
 {% endapi-method-description %}
 
 {% api-method-spec %}
-
 {% api-method-request %}
-
 {% api-method-path-parameters %}
-
-{% api-method-parameter name="app_id" type="String" required=true %}
-App ID (Publication) to scope this request for.
+{% api-method-parameter name="app\_id" type="String" required=true %}
+App ID \(Publication\) to scope this request for.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id" type="Integer" required=true %}
 Reader ID
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 
-
-
 {% api-method-body-parameters %}
-
-{% api-method-parameter name="product_ids" type="Array" required=true %}
+{% api-method-parameter name="product\_ids" type="Array" required=true %}
 Array containing Issue Product IDs to unlock
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order_id" type="String" %}
+{% api-method-parameter name="order\_id" type="String" %}
 Subscription Order ID
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
-
 {% endapi-method-request %}
 
 {% api-method-response %}
-
 {% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-```json
+{% endapi-method-response-example-description %}
+
+```javascript
 {
 }
 ```
-
 {% endapi-method-response-example %}
-
 {% endapi-method-response %}
-
 {% endapi-method-spec %}
-
 {% endapi-method %}
 
-{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id/export.csv" %}
-
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/readers/:app\_id/export.csv" %}
 {% api-method-summary %}
 Export readers
 {% endapi-method-summary %}
@@ -492,36 +415,25 @@ Export readers
 {% endapi-method-description %}
 
 {% api-method-spec %}
-
 {% api-method-request %}
-
 {% api-method-path-parameters %}
-
-{% api-method-parameter name="app_id" type="String" required=true %}
-App ID (Publication) to scope this request for.
+{% api-method-parameter name="app\_id" type="String" required=true %}
+App ID \(Publication\) to scope this request for.
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
-
-
-
-
 {% endapi-method-request %}
 
 {% api-method-response %}
-
 {% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-```json
+{% endapi-method-response-example-description %}
+
+```javascript
 null
 ```
-
 {% endapi-method-response-example %}
-
 {% endapi-method-response %}
-
 {% endapi-method-spec %}
-
 {% endapi-method %}
-
 
