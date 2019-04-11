@@ -354,11 +354,11 @@ Issue properties
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="create\_pages" type="Virtus::Attribute::Boolean" %}
+{% api-method-parameter name="create\_pages" type="boolean" %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="publish" type="Virtus::Attribute::Boolean" %}
+{% api-method-parameter name="publish" type="boolean" %}
 
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -480,80 +480,8 @@ Issue categories
 Custom Data Hash
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="custom\_data\[language\]" type="String" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="custom\_data\[copy\_of\]" type="String" %}
-
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="properties" type="Hash" %}
 Issue properties
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[-baker-page-turn-tap\]" type="Virtus::Attribute::Boolean" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[-baker-vertical-bounce\]" type="Virtus::Attribute::Boolean" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[-baker-max-zoom-level\]" type="Float" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[-baker-dual-spread\]" type="Virtus::Attribute::Boolean" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[default\_orientation\]" type="String" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[orientation\_phone\]" type="String" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[orientation\_tablet\]" type="String" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[converted\_to\_typeloft\]" type="Virtus::Attribute::Boolean" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[reverse\_page\_order\]" type="Virtus::Attribute::Boolean" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[link\_style\]" type="String" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[allowed\_devices\]" type="\[String\]" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[allowed\_platforms\]" type="\[String\]" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[navigator\]" type="Virtus::Attribute::Boolean" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[cover\_colors\]" type="\[String\]" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[features\]" type="\[String\]" %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="properties\[web\_url\]" type="String" %}
-
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}

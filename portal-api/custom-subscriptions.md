@@ -217,15 +217,15 @@ Email address of the reader account
 Plain-text password of Reader account shown only when creating a new subscription without specifying a password
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="start\_date" type="Grape::ApiDate" %}
-Date from which the subscription should be valid \(inclusive\)
+{% api-method-parameter name="start\_date" type="string" %}
+Date from which the subscription should be valid \(inclusive\), format YYYY-MM-DD
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="end\_date" type="Grape::ApiDate" %}
-Date until which the subscription should be valid \(inclusive\)
+{% api-method-parameter name="end\_date" type="string" %}
+Date until which the subscription should be valid \(inclusive\) format YYYY-MM-DD
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="active" type="Virtus::Attribute::Boolean" %}
+{% api-method-parameter name="active" type="boolean" %}
 Boolean indicating whether the subscription is currently active
 {% endapi-method-parameter %}
 
@@ -241,7 +241,7 @@ First name of the Custom Subscription's reader
 Last name of the Custom Subscription's reader
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="confirmation" type="Virtus::Attribute::Boolean" %}
+{% api-method-parameter name="confirmation" type="boolean" %}
 Boolean to indicate whether to send a confirmation email
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -302,15 +302,15 @@ Subscription ID
 {% endapi-method-path-parameters %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="start\_date" type="Grape::ApiDate" %}
-Date from which the subscription should be valid \(inclusive\)
+{% api-method-parameter name="start\_date" type="string" %}
+Date from which the subscription should be valid \(inclusive\), format YYYY-MM-DD
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="end\_date" type="Grape::ApiDate" %}
-Date until which the subscription should be valid \(inclusive\)
+{% api-method-parameter name="end\_date" type="string" %}
+Date until which the subscription should be valid \(inclusive\), format YYYY-MM-DD
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="active" type="Virtus::Attribute::Boolean" %}
+{% api-method-parameter name="active" type="boolean" %}
 Boolean indicating whether the subscription is currently active
 {% endapi-method-parameter %}
 
