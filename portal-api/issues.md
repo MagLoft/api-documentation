@@ -20,6 +20,10 @@ App ID \(Publication\) to scope this request for.
 {% endapi-method-path-parameters %}
 
 {% api-method-query-parameters %}
+{% api-method-parameter name="screen\_type" type="string" required=false %}
+
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="url\_scheme" type="string" required=false %}
 URL scheme for the issue assets.  
 The value can be one of the following:  
