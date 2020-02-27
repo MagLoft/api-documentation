@@ -2,7 +2,8 @@
 
 API for managing Custom Subscription
 
-{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/custom\_subscriptions/:app\_id" %}
+{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/custom_subscriptions/:app_id" %}
+
 {% api-method-summary %}
 List Custom Subscriptions
 {% endapi-method-summary %}
@@ -12,21 +13,27 @@ This endpoint **returns** a list of all `custom subscriptions` that belong to th
 {% endapi-method-description %}
 
 {% api-method-spec %}
+
 {% api-method-request %}
+
 {% api-method-path-parameters %}
-{% api-method-parameter name="app\_id" type="String" required=true %}
-App ID \(Publication\) to scope this request for.
+
+{% api-method-parameter name="app_id" type="String" required=true %}
+App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
+
 {% endapi-method-path-parameters %}
+
+
+
+
 {% endapi-method-request %}
 
 {% api-method-response %}
+
 {% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
 
-{% endapi-method-response-example-description %}
-
-```javascript
+```json
 {
   "id": 1234,
   "order_id": "sub-12345",
@@ -48,12 +55,17 @@ App ID \(Publication\) to scope this request for.
   "password": "pass1234"
 }
 ```
+
 {% endapi-method-response-example %}
+
 {% endapi-method-response %}
+
 {% endapi-method-spec %}
+
 {% endapi-method %}
 
-{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/custom\_subscriptions/:app\_id/page/:page" %}
+{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/custom_subscriptions/:app_id/page/:page" %}
+
 {% api-method-summary %}
 List Custom Subscriptions Page
 {% endapi-method-summary %}
@@ -63,43 +75,51 @@ This endpoint **returns** a page list of all `custom subscriptions` that belong 
 {% endapi-method-description %}
 
 {% api-method-spec %}
+
 {% api-method-request %}
+
 {% api-method-path-parameters %}
-{% api-method-parameter name="app\_id" type="String" required=true %}
-App ID \(Publication\) to scope this request for.
+
+{% api-method-parameter name="app_id" type="String" required=true %}
+App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page" type="Integer" %}
 The page number to list
 {% endapi-method-parameter %}
+
 {% endapi-method-path-parameters %}
 
+
 {% api-method-query-parameters %}
-{% api-method-parameter name="per\_page" type="Integer" %}
+
+{% api-method-parameter name="per_page" type="Integer" %}
 Number of items to show per page
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order\_by" type="Symbol" %}
+{% api-method-parameter name="order_by" type="Symbol" %}
 Field to sort results by
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="order\_dir" type="Symbol" %}
-Direction \(asc, desc\) to sort results by
+{% api-method-parameter name="order_dir" type="Symbol" %}
+Direction (asc, desc) to sort results by
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="filter" type="String" %}
 Text filter to search results by
 {% endapi-method-parameter %}
+
 {% endapi-method-query-parameters %}
+
+
+
 {% endapi-method-request %}
 
 {% api-method-response %}
+
 {% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
 
-{% endapi-method-response-example-description %}
-
-```javascript
+```json
 {
   "total": 1,
   "page": 1,
@@ -127,12 +147,17 @@ Text filter to search results by
   ]
 }
 ```
+
 {% endapi-method-response-example %}
+
 {% endapi-method-response %}
+
 {% endapi-method-spec %}
+
 {% endapi-method %}
 
-{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/custom\_subscriptions/:app\_id/\(:email\)\(:id\)" %}
+{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/custom_subscriptions/:app_id/(:email)(:id)" %}
+
 {% api-method-summary %}
 Get Custom Subscription
 {% endapi-method-summary %}
@@ -142,10 +167,13 @@ This endpoint **returns** a specific `custom subscription` by `id`
 {% endapi-method-description %}
 
 {% api-method-spec %}
+
 {% api-method-request %}
+
 {% api-method-path-parameters %}
-{% api-method-parameter name="app\_id" type="String" required=true %}
-App ID \(Publication\) to scope this request for.
+
+{% api-method-parameter name="app_id" type="String" required=true %}
+App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="email" type="String" %}
@@ -155,16 +183,19 @@ Email address of the reader account
 {% api-method-parameter name="id" type="Integer" %}
 Subscription ID
 {% endapi-method-parameter %}
+
 {% endapi-method-path-parameters %}
+
+
+
+
 {% endapi-method-request %}
 
 {% api-method-response %}
+
 {% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
 
-{% endapi-method-response-example-description %}
-
-```javascript
+```json
 {
   "id": 1234,
   "order_id": "sub-12345",
@@ -186,12 +217,17 @@ Subscription ID
   "password": "pass1234"
 }
 ```
+
 {% endapi-method-response-example %}
+
 {% endapi-method-response %}
+
 {% endapi-method-spec %}
+
 {% endapi-method %}
 
-{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/custom\_subscriptions/:app\_id" %}
+{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/custom_subscriptions/:app_id" %}
+
 {% api-method-summary %}
 Create Custom Subscription
 {% endapi-method-summary %}
@@ -201,14 +237,21 @@ This endpoint **creates** a new `custom subscription` and **returns** the saved 
 {% endapi-method-description %}
 
 {% api-method-spec %}
+
 {% api-method-request %}
+
 {% api-method-path-parameters %}
-{% api-method-parameter name="app\_id" type="String" required=true %}
-App ID \(Publication\) to scope this request for.
+
+{% api-method-parameter name="app_id" type="String" required=true %}
+App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
+
 {% endapi-method-path-parameters %}
 
+
+
 {% api-method-body-parameters %}
+
 {% api-method-parameter name="email" type="String" required=true %}
 Email address of the reader account
 {% endapi-method-parameter %}
@@ -217,20 +260,20 @@ Email address of the reader account
 Plain-text password of Reader account shown only when creating a new subscription without specifying a password
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="start\_date" type="string" %}
-Date from which the subscription should be valid \(inclusive\), format YYYY-MM-DD
+{% api-method-parameter name="start_date" type="Grape::ApiDate" %}
+Date from which the subscription should be valid (inclusive)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="end\_date" type="string" %}
-Date until which the subscription should be valid \(inclusive\) format YYYY-MM-DD
+{% api-method-parameter name="end_date" type="Grape::ApiDate" %}
+Date until which the subscription should be valid (inclusive)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="active" type="boolean" %}
+{% api-method-parameter name="active" type="Virtus::Attribute::Boolean" %}
 Boolean indicating whether the subscription is currently active
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="custom\_data" type="Hash" %}
-Hash containing custom data \(string key, string value\) of a reader
+{% api-method-parameter name="custom_data" type="Hash" %}
+Hash containing custom data (string key, string value) of a reader
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="firstname" type="String" %}
@@ -241,19 +284,27 @@ First name of the Custom Subscription's reader
 Last name of the Custom Subscription's reader
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="confirmation" type="boolean" %}
+{% api-method-parameter name="confirmation" type="Virtus::Attribute::Boolean" %}
 Boolean to indicate whether to send a confirmation email
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="upsert" type="Virtus::Attribute::Boolean" %}
+Boolean to indicate whether to update existing custom subscription if the email is registered
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="classification_ids" type="Array" %}
+
+{% endapi-method-parameter %}
+
 {% endapi-method-body-parameters %}
+
 {% endapi-method-request %}
 
 {% api-method-response %}
+
 {% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
 
-{% endapi-method-response-example-description %}
-
-```javascript
+```json
 {
   "id": 1234,
   "order_id": "sub-12345",
@@ -275,12 +326,17 @@ Boolean to indicate whether to send a confirmation email
   "password": "pass1234"
 }
 ```
+
 {% endapi-method-response-example %}
+
 {% endapi-method-response %}
+
 {% endapi-method-spec %}
+
 {% endapi-method %}
 
-{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/custom\_subscriptions/:app\_id/:id" %}
+{% api-method method="put" host="https://api.example.com/" path="/api/portal/v1/custom_subscriptions/:app_id/:id" %}
+
 {% api-method-summary %}
 Update Custom Subscription
 {% endapi-method-summary %}
@@ -290,43 +346,50 @@ This endpoint **updates** a specific `custom subscription` by `id` and **returns
 {% endapi-method-description %}
 
 {% api-method-spec %}
+
 {% api-method-request %}
+
 {% api-method-path-parameters %}
-{% api-method-parameter name="app\_id" type="String" required=true %}
-App ID \(Publication\) to scope this request for.
+
+{% api-method-parameter name="app_id" type="String" required=true %}
+App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id" type="Integer" required=true %}
 Subscription ID
 {% endapi-method-parameter %}
+
 {% endapi-method-path-parameters %}
 
+
+
 {% api-method-body-parameters %}
-{% api-method-parameter name="start\_date" type="string" %}
-Date from which the subscription should be valid \(inclusive\), format YYYY-MM-DD
+
+{% api-method-parameter name="start_date" type="Grape::ApiDate" %}
+Date from which the subscription should be valid (inclusive)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="end\_date" type="string" %}
-Date until which the subscription should be valid \(inclusive\), format YYYY-MM-DD
+{% api-method-parameter name="end_date" type="Grape::ApiDate" %}
+Date until which the subscription should be valid (inclusive)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="active" type="boolean" %}
+{% api-method-parameter name="active" type="Virtus::Attribute::Boolean" %}
 Boolean indicating whether the subscription is currently active
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="custom\_data" type="Hash" %}
-Hash containing custom data \(string key, string value\) of a reader
+{% api-method-parameter name="custom_data" type="Hash" %}
+Hash containing custom data (string key, string value) of a reader
 {% endapi-method-parameter %}
+
 {% endapi-method-body-parameters %}
+
 {% endapi-method-request %}
 
 {% api-method-response %}
+
 {% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
 
-{% endapi-method-response-example-description %}
-
-```javascript
+```json
 {
   "id": 1234,
   "order_id": "sub-12345",
@@ -348,12 +411,17 @@ Hash containing custom data \(string key, string value\) of a reader
   "password": "pass1234"
 }
 ```
+
 {% endapi-method-response-example %}
+
 {% endapi-method-response %}
+
 {% endapi-method-spec %}
+
 {% endapi-method %}
 
-{% api-method method="delete" host="https://www.magloft.com" path="/api/portal/v1/custom\_subscriptions/:app\_id/:id" %}
+{% api-method method="delete" host="https://api.example.com/" path="/api/portal/v1/custom_subscriptions/:app_id/:id" %}
+
 {% api-method-summary %}
 Delete Custom Subscription
 {% endapi-method-summary %}
@@ -363,33 +431,44 @@ This endpoint **deletes** a specific `custom subscription` by `id` and **returns
 {% endapi-method-description %}
 
 {% api-method-spec %}
+
 {% api-method-request %}
+
 {% api-method-path-parameters %}
-{% api-method-parameter name="app\_id" type="String" required=true %}
-App ID \(Publication\) to scope this request for.
+
+{% api-method-parameter name="app_id" type="String" required=true %}
+App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id" type="Integer" required=true %}
 Subscription ID
 {% endapi-method-parameter %}
+
 {% endapi-method-path-parameters %}
+
+
+
+
 {% endapi-method-request %}
 
 {% api-method-response %}
+
 {% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
 
-{% endapi-method-response-example-description %}
-
-```javascript
+```json
 null
 ```
+
 {% endapi-method-response-example %}
+
 {% endapi-method-response %}
+
 {% endapi-method-spec %}
+
 {% endapi-method %}
 
-{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/custom\_subscriptions/:app\_id/export.csv" %}
+{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/custom_subscriptions/:app_id/export.csv" %}
+
 {% api-method-summary %}
 Export Custom Subscriptions
 {% endapi-method-summary %}
@@ -399,25 +478,36 @@ This endpoint **returns** a csv document that contains a spreadsheet of all `cus
 {% endapi-method-description %}
 
 {% api-method-spec %}
+
 {% api-method-request %}
+
 {% api-method-path-parameters %}
-{% api-method-parameter name="app\_id" type="String" required=true %}
-App ID \(Publication\) to scope this request for.
+
+{% api-method-parameter name="app_id" type="String" required=true %}
+App ID (Publication) to scope this request for.
 {% endapi-method-parameter %}
+
 {% endapi-method-path-parameters %}
+
+
+
+
 {% endapi-method-request %}
 
 {% api-method-response %}
+
 {% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
 
-{% endapi-method-response-example-description %}
-
-```javascript
+```json
 null
 ```
+
 {% endapi-method-response-example %}
+
 {% endapi-method-response %}
+
 {% endapi-method-spec %}
+
 {% endapi-method %}
+
 
