@@ -2,7 +2,7 @@
 
 API for managing Categories
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/categories/:app_id" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/categories/:app_id" %}
 
 {% api-method-summary %}
 List Categories
@@ -50,7 +50,7 @@ App ID (Publication) to scope this request for.
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/categories/:app_id/:id" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/categories/:app_id/:id" %}
 
 {% api-method-summary %}
 Get Category
@@ -102,7 +102,7 @@ Category ID
 
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/categories/:app_id/sort" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/categories/:app_id/sort" %}
 
 {% api-method-summary %}
 Sort Categories
@@ -160,7 +160,7 @@ null
 
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/categories/:app_id" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/categories/:app_id" %}
 
 {% api-method-summary %}
 Create Category
@@ -219,7 +219,7 @@ Hex color of a category
 
 {% endapi-method %}
 
-{% api-method method="put" host="https://api.example.com/" path="/api/portal/v1/categories/:app_id/:id" %}
+{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/categories/:app_id/:id" %}
 
 {% api-method-summary %}
 Update Category
@@ -282,7 +282,7 @@ Hex color of a category
 
 {% endapi-method %}
 
-{% api-method method="delete" host="https://api.example.com/" path="/api/portal/v1/categories/:app_id/:id" %}
+{% api-method method="delete" host="https://www.magloft.com" path="/api/portal/v1/categories/:app_id/:id" %}
 
 {% api-method-summary %}
 Delete Category

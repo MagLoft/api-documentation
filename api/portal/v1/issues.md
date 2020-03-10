@@ -2,7 +2,7 @@
 
 API for managing issues
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/issues/:app_id" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/issues/:app_id" %}
 
 {% api-method-summary %}
 List Issues
@@ -108,7 +108,7 @@ Generator
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/issues/:app_id/page/:page" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/issues/:app_id/page/:page" %}
 
 {% api-method-summary %}
 Retrieve paginated list of issues
@@ -224,7 +224,7 @@ Text filter to search results by
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/issues/:app_id/:id" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/issues/:app_id/:id" %}
 
 {% api-method-summary %}
 Get Issue
@@ -314,7 +314,7 @@ Issue ID
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/issues/:app_id/:id/download" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/issues/:app_id/:id/download" %}
 
 {% api-method-summary %}
 Download Issue
@@ -361,7 +361,7 @@ null
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/issues/:app_id/:id/source" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/issues/:app_id/:id/source" %}
 
 {% api-method-summary %}
 Download a specific issue source
@@ -408,7 +408,7 @@ null
 
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/issues/:app_id" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/issues/:app_id" %}
 
 {% api-method-summary %}
 Create an Issue
@@ -597,7 +597,7 @@ Issue properties
 
 {% endapi-method %}
 
-{% api-method method="put" host="https://api.example.com/" path="/api/portal/v1/issues/:app_id/:id" %}
+{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/issues/:app_id/:id" %}
 
 {% api-method-summary %}
 Update an Issue
@@ -850,7 +850,7 @@ Issue properties
 
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/issues/:app_id/:id/clone/:magazine_id" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/issues/:app_id/:id/clone/:magazine_id" %}
 
 {% api-method-summary %}
 Clone an Issue
@@ -955,7 +955,7 @@ Cloned Issue title
 
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/issues/:app_id/:id/sort" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/issues/:app_id/:id/sort" %}
 
 {% api-method-summary %}
 Sort Issue Articles
@@ -1009,7 +1009,7 @@ null
 
 {% endapi-method %}
 
-{% api-method method="put" host="https://api.example.com/" path="/api/portal/v1/issues/:app_id/:id/convert" %}
+{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/issues/:app_id/:id/convert" %}
 
 {% api-method-summary %}
 Convert Issue
@@ -1099,7 +1099,7 @@ Issue ID
 
 {% endapi-method %}
 
-{% api-method method="put" host="https://api.example.com/" path="/api/portal/v1/issues/:app_id/:id/pack" %}
+{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/issues/:app_id/:id/pack" %}
 
 {% api-method-summary %}
 Pack an issue to HPUB
@@ -1189,7 +1189,7 @@ Issue ID
 
 {% endapi-method %}
 
-{% api-method method="put" host="https://api.example.com/" path="/api/portal/v1/issues/:app_id/:id/export_pdf" %}
+{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/issues/:app_id/:id/export_pdf" %}
 
 {% api-method-summary %}
 Export issue to PDF
@@ -1279,7 +1279,7 @@ Issue ID
 
 {% endapi-method %}
 
-{% api-method method="put" host="https://api.example.com/" path="/api/portal/v1/issues/:app_id/:id/generate_web_url" %}
+{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/issues/:app_id/:id/generate_web_url" %}
 
 {% api-method-summary %}
 Generate Web URL
@@ -1369,7 +1369,7 @@ Issue ID
 
 {% endapi-method %}
 
-{% api-method method="put" host="https://api.example.com/" path="/api/portal/v1/issues/:app_id/:id/process_links" %}
+{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/issues/:app_id/:id/process_links" %}
 
 {% api-method-summary %}
 Process Filename
@@ -1416,7 +1416,7 @@ null
 
 {% endapi-method %}
 
-{% api-method method="delete" host="https://api.example.com/" path="/api/portal/v1/issues/:app_id/:id" %}
+{% api-method method="delete" host="https://www.magloft.com" path="/api/portal/v1/issues/:app_id/:id" %}
 
 {% api-method-summary %}
 Delete Issue

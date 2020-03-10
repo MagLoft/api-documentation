@@ -2,7 +2,7 @@
 
 API for managing articles
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/articles/:app_id" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/articles/:app_id" %}
 
 {% api-method-summary %}
 List Articles
@@ -86,7 +86,7 @@ Direction (asc, desc) to sort results by
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/articles/:app_id/page/:page" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/articles/:app_id/page/:page" %}
 
 {% api-method-summary %}
 Retrieve paginated list of articles
@@ -202,7 +202,7 @@ Text filter to search results by
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/articles/:app_id/:id" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/articles/:app_id/:id" %}
 
 {% api-method-summary %}
 Get Article
@@ -274,7 +274,7 @@ Article ID
 
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/articles/:app_id" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/articles/:app_id" %}
 
 {% api-method-summary %}
 Create an Article
@@ -385,7 +385,7 @@ Article type
 
 {% endapi-method %}
 
-{% api-method method="put" host="https://api.example.com/" path="/api/portal/v1/articles/:app_id/:id" %}
+{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/articles/:app_id/:id" %}
 
 {% api-method-summary %}
 Update an Article
@@ -504,7 +504,7 @@ A boolean indicating whether this article is visible
 
 {% endapi-method %}
 
-{% api-method method="delete" host="https://api.example.com/" path="/api/portal/v1/articles/:app_id/:id" %}
+{% api-method method="delete" host="https://www.magloft.com" path="/api/portal/v1/articles/:app_id/:id" %}
 
 {% api-method-summary %}
 Delete Article
@@ -551,14 +551,14 @@ null
 
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/articles/:app_id/flexpdf-import" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/articles/:app_id/flexpdf-import" %}
 
 {% api-method-summary %}
 FlexPDF Import
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint **creates** multiple `article` and **returns** 
+This endpoint **creates** multiple `article` and **returns**
 {% endapi-method-description %}
 
 {% api-method-spec %}

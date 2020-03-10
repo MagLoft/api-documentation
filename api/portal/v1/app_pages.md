@@ -2,7 +2,7 @@
 
 API for managing In-App Pages
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/app_pages/:app_id" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/app_pages/:app_id" %}
 
 {% api-method-summary %}
 List App Pages
@@ -61,7 +61,7 @@ App ID (Publication) to scope this request for.
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/app_pages/:app_id/page/:page" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/app_pages/:app_id/page/:page" %}
 
 {% api-method-summary %}
 Retrieve paginated list of readers
@@ -150,7 +150,7 @@ Direction (asc, desc) to sort results by
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/app_pages/:app_id/:id" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/app_pages/:app_id/:id" %}
 
 {% api-method-summary %}
 Get App Page
@@ -213,7 +213,7 @@ App Page ID
 
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/app_pages/:app_id" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/app_pages/:app_id" %}
 
 {% api-method-summary %}
 Create App Page
@@ -303,7 +303,7 @@ An array specifying on which devices the page should be shown (web, ios, android
 
 {% endapi-method %}
 
-{% api-method method="put" host="https://api.example.com/" path="/api/portal/v1/app_pages/:app_id/:id" %}
+{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/app_pages/:app_id/:id" %}
 
 {% api-method-summary %}
 Update App Page
@@ -397,7 +397,7 @@ An array specifying on which devices the page should be shown (web, ios, android
 
 {% endapi-method %}
 
-{% api-method method="delete" host="https://api.example.com/" path="/api/portal/v1/app_pages/:app_id/:id" %}
+{% api-method method="delete" host="https://www.magloft.com" path="/api/portal/v1/app_pages/:app_id/:id" %}
 
 {% api-method-summary %}
 Delete App Page

@@ -2,7 +2,7 @@
 
 API for managing app readers
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/readers/:app_id" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id" %}
 
 {% api-method-summary %}
 List Readers
@@ -74,7 +74,7 @@ App ID (Publication) to scope this request for.
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/readers/:app_id/page/:page" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id/page/:page" %}
 
 {% api-method-summary %}
 Retrieve paginated list of readers
@@ -164,7 +164,7 @@ Direction (asc, desc) to sort results by
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/readers/:app_id/(:email)(:id)" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id/(:email)(:id)" %}
 
 {% api-method-summary %}
 Get Reader
@@ -236,7 +236,7 @@ Reader ID
 
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/readers/:app_id" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id" %}
 
 {% api-method-summary %}
 Create a Reader
@@ -335,7 +335,7 @@ Reader Classification IDs
 
 {% endapi-method %}
 
-{% api-method method="put" host="https://api.example.com/" path="/api/portal/v1/readers/:app_id/:id" %}
+{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id/:id" %}
 
 {% api-method-summary %}
 Update a Reader
@@ -434,7 +434,7 @@ Reader Classification IDs
 
 {% endapi-method %}
 
-{% api-method method="delete" host="https://api.example.com/" path="/api/portal/v1/readers/:app_id/:id" %}
+{% api-method method="delete" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id/:id" %}
 
 {% api-method-summary %}
 Delete Reader
@@ -481,7 +481,7 @@ null
 
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/readers/:app_id/:id/unlock" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id/:id/unlock" %}
 
 {% api-method-summary %}
 Create Issue Purchases
@@ -540,7 +540,7 @@ Subscription Order ID
 
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/readers/:app_id/:id/unlock/coupon" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id/:id/unlock/coupon" %}
 
 {% api-method-summary %}
 Unlock Issue By Coupon
@@ -603,7 +603,7 @@ Reader ID
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/readers/:app_id/export.csv" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/readers/:app_id/export.csv" %}
 
 {% api-method-summary %}
 Export readers

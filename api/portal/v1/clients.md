@@ -2,7 +2,7 @@
 
 API for managing Clients (Sub-User Accounts)
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/clients/" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/clients/" %}
 
 {% api-method-summary %}
 List Clients
@@ -64,7 +64,7 @@ This endpoint **returns** a list of `clients`
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/clients/page/:page" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/clients/page/:page" %}
 
 {% api-method-summary %}
 Retrieve paginated list of clients
@@ -157,7 +157,7 @@ Filter by publications ID
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/clients/:id" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/clients/:id" %}
 
 {% api-method-summary %}
 GET Client
@@ -220,7 +220,7 @@ Client ID
 
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/clients/" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/clients/" %}
 
 {% api-method-summary %}
 Create new client
@@ -295,7 +295,7 @@ Client Password
 
 {% endapi-method %}
 
-{% api-method method="put" host="https://api.example.com/" path="/api/portal/v1/clients/:id" %}
+{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/clients/:id" %}
 
 {% api-method-summary %}
 Update Client
@@ -357,7 +357,7 @@ null
 
 {% endapi-method %}
 
-{% api-method method="delete" host="https://api.example.com/" path="/api/portal/v1/clients/:id" %}
+{% api-method method="delete" host="https://www.magloft.com" path="/api/portal/v1/clients/:id" %}
 
 {% api-method-summary %}
 Delete Client
@@ -400,7 +400,7 @@ null
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/clients/:id/become" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/clients/:id/become" %}
 
 {% api-method-summary %}
 Become Client

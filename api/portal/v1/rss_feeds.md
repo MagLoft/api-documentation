@@ -2,7 +2,7 @@
 
 API for managing rss feeds
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/rss_feeds/:app_id" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/rss_feeds/:app_id" %}
 
 {% api-method-summary %}
 List RSS Feeds
@@ -66,7 +66,7 @@ App ID (Publication) to scope this request for.
 
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/rss_feeds/:app_id" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/rss_feeds/:app_id" %}
 
 {% api-method-summary %}
 Create RSS Feed
@@ -157,7 +157,7 @@ Boolean indicating whether the article from the RSS Feed will be automatically p
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/rss_feeds/:app_id/:id" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/rss_feeds/:app_id/:id" %}
 
 {% api-method-summary %}
 Get RSS Feed
@@ -225,7 +225,7 @@ RSS Feed ID
 
 {% endapi-method %}
 
-{% api-method method="put" host="https://api.example.com/" path="/api/portal/v1/rss_feeds/:app_id/:id" %}
+{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/rss_feeds/:app_id/:id" %}
 
 {% api-method-summary %}
 Update RSS Feed
@@ -328,7 +328,7 @@ Boolean indicating whether the imported article will show related articles
 
 {% endapi-method %}
 
-{% api-method method="delete" host="https://api.example.com/" path="/api/portal/v1/rss_feeds/:app_id/:id" %}
+{% api-method method="delete" host="https://www.magloft.com" path="/api/portal/v1/rss_feeds/:app_id/:id" %}
 
 {% api-method-summary %}
 Delete RSS Feed
@@ -375,7 +375,7 @@ null
 
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/rss_feeds/:app_id/:id/synchronize" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/rss_feeds/:app_id/:id/synchronize" %}
 
 {% api-method-summary %}
 Synchronize RSS Feed

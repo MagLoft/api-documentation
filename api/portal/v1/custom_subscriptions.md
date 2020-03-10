@@ -2,7 +2,7 @@
 
 API for managing Custom Subscription
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/custom_subscriptions/:app_id" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/custom_subscriptions/:app_id" %}
 
 {% api-method-summary %}
 List Custom Subscriptions
@@ -64,7 +64,7 @@ App ID (Publication) to scope this request for.
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/custom_subscriptions/:app_id/page/:page" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/custom_subscriptions/:app_id/page/:page" %}
 
 {% api-method-summary %}
 List Custom Subscriptions Page
@@ -156,7 +156,7 @@ Text filter to search results by
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/custom_subscriptions/:app_id/(:email)(:id)" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/custom_subscriptions/:app_id/(:email)(:id)" %}
 
 {% api-method-summary %}
 Get Custom Subscription
@@ -226,7 +226,7 @@ Subscription ID
 
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/custom_subscriptions/:app_id" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/custom_subscriptions/:app_id" %}
 
 {% api-method-summary %}
 Create Custom Subscription
@@ -335,7 +335,7 @@ Boolean to indicate whether to update existing custom subscription if the email 
 
 {% endapi-method %}
 
-{% api-method method="put" host="https://api.example.com/" path="/api/portal/v1/custom_subscriptions/:app_id/:id" %}
+{% api-method method="put" host="https://www.magloft.com" path="/api/portal/v1/custom_subscriptions/:app_id/:id" %}
 
 {% api-method-summary %}
 Update Custom Subscription
@@ -420,7 +420,7 @@ Hash containing custom data (string key, string value) of a reader
 
 {% endapi-method %}
 
-{% api-method method="delete" host="https://api.example.com/" path="/api/portal/v1/custom_subscriptions/:app_id/:id" %}
+{% api-method method="delete" host="https://www.magloft.com" path="/api/portal/v1/custom_subscriptions/:app_id/:id" %}
 
 {% api-method-summary %}
 Delete Custom Subscription
@@ -467,7 +467,7 @@ null
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/custom_subscriptions/:app_id/export.csv" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/custom_subscriptions/:app_id/export.csv" %}
 
 {% api-method-summary %}
 Export Custom Subscriptions

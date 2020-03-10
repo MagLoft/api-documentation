@@ -2,7 +2,7 @@
 
 API for managing rss import
 
-{% api-method method="post" host="https://api.example.com/" path="/api/portal/v1/rss_imports/:app_id" %}
+{% api-method method="post" host="https://www.magloft.com" path="/api/portal/v1/rss_imports/:app_id" %}
 
 {% api-method-summary %}
 Create an RSS Import
@@ -61,7 +61,7 @@ External Blog URL to import articles from
 
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.example.com/" path="/api/portal/v1/rss_imports/:app_id/:id" %}
+{% api-method method="get" host="https://www.magloft.com" path="/api/portal/v1/rss_imports/:app_id/:id" %}
 
 {% api-method-summary %}
 Get RSS Import
